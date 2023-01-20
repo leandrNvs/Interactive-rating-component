@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --light-grey: hsl(216, 10%, 69%);
+  --medium-grey: hsl(216, 16%, 25%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-bark-blue: hsl(216, 12%, 8%);
+
+  --font-family: "Overpass", sans-serif;
+
+  --p-font-size: 0.938rem;
+}
+
+body {
+  background-color: var(--very-bark-blue);
+}
+
+.card {
+  font-family: var(--font-family);
+  background-color: var(--dark-blue);
+  margin: 2rem 1.5rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  max-width: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__rate {
+  transition: 0.5s;
+}
+
+.card__title {
+  font-size: 2rem;
+  color: var(--White);
+  margin: 1rem 0;
+}
+
+.card__description {
+  font-size: var(--p-font-size);
+  color: var(--light-grey);
+  margin: 1rem 0;
+}
+
+.card__icon {
+  --icon-size: 35px;
+  height: var(--icon-size);
+  width: var(--icon-size);
+  border-radius: 50%;
+  background-color: var(--medium-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+}
+
+.card__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1.2rem;
+  margin: 1rem 0;
+}
+
+.card__form input[type="radio"] {
+  display: none;
+}
+
+.card__form button {
+  background-color: var(--orange);
+  border: 0;
+  color: var(--White);
+  border-radius: 2rem;
+  height: 3rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-family: var(--font-family);
+  flex-basis: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.card__form button:hover {
+  background-color: var(--White);
+  color: var(--orange);
+}
+
+.card__form .card__icon:hover {
+  cursor: pointer;
+}
+
+.card__form input[type="radio"]:checked + .card__icon {
+  background-color: var(--light-grey);
+}
+
+.card__form .card__icon:hover {
+  background-color: var(--orange);
+}
+
+.card__thanks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.card__thanks .card__description {
+  text-align: center;
+  margin-top: 0;
+}
+
+.card__feedback {
+  margin: 2rem 0 0;
+  border-radius: 1rem;
+  color: var(--orange);
+  background-color: var(--medium-grey);
+  padding: 0.3rem 1.1rem;
+}
+
+@media (min-width: 500px) {
+  .card {
+    margin: 2rem auto;
+  }
+
+  .card__icon {
+    --icon-size: 50px;
+  }
+}
+
+.attribution {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.attribution a:visited {
+  color: cornflowerblue;
+}

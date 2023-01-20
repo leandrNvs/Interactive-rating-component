@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <div class="container">
+        <section class="card__rate">
+          <div class="card__icon">
+            <img src="Assets/images/icon-star.svg" alt="" />
+          </div>
+          <h1 class="card__title">How did we do?</h1>
+          <p class="card__description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form class="card__form" method="post">
+            <label>
+              <input type="radio" name="rate" value="1" />
+              <span class="card__icon">1</span>
+            </label>
+            <label>
+              <input type="radio" name="rate" value="2" />
+              <span class="card__icon">2</span>
+            </label>
+            <label>
+              <input type="radio" name="rate" value="3" />
+              <span class="card__icon">3</span>
+            </label>
+            <label>
+              <input type="radio" name="rate" value="4" />
+              <span class="card__icon">4</span>
+            </label>
+            <label>
+              <input type="radio" name="rate" value="5" />
+              <span class="card__icon">5</span>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        <section class="card__thanks">
+          <img
+            src="Assets/images/illustration-thank-you.svg"
+            class="card__image"
+          />
+          <p class="card__feedback">
+            You selected out of <span class="card__output"></span>
+          </p>
+          <p class="card__title">Thank You!</p>
+          <p class="card__description">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      Coded by
+      <a href="https://github.com/leandrNvs" target="_blank">Leandro Neves</a>.
+    </div>
+
+    <script src="Assets/js/main.js"></script>
+  </body>
+</html>
