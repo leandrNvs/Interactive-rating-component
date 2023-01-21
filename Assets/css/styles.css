@@ -21,6 +21,11 @@
 
 body {
   background-color: var(--very-bark-blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card {
