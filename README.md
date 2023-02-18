@@ -30,6 +30,9 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [live](https://leandrnvs.github.io/Interactive-rating-component/)
+
+## Author
+
 - Website - [In progreess](https://www.your-site.com)
 - Frontend Mentor - [@leandrNvs](https://www.frontendmentor.io/profile/leandrNvs)
 - Linkedin - [Profile](https://www.linkedin.com/in/leandrnvs/)
